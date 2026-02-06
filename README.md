@@ -17,7 +17,13 @@ This repository isn't just about getting the right answer—it's about understan
 leetcode/
 ├── easy/                    # Easy difficulty problems
 │   ├── two-sum.ts          # Two Sum with hash map approach
-│   └── valid-parentheses.ts # Valid Parentheses with stack implementation
+│   ├── valid-parentheses.ts # Valid Parentheses with stack implementation
+│   ├── reverse-linked-list.ts # Reverse Linked List with iterative approach
+│   ├── middle-of-the-linked-list.ts # Middle of the Linked List with two pointers
+│   ├── linked-list-cycle.ts # Linked List Cycle with Tortoise and Hare algorithm
+│   └── merge-two-sorted-lists.ts # Merge Two Sorted Lists with dummy node
+├── medium/                  # Medium difficulty problems
+│   └── remove_nth_node_from_end_of_list.ts # Remove Nth Node From End of List
 └── README.md               # This file
 ```
 
@@ -36,6 +42,36 @@ leetcode/
   2. **Optimized stack approach** (3ms, 58.83MB) - O(n) time complexity
 - **Custom Stack implementation** with full documentation
 - **ASCII character comparison** for performance optimization
+
+### Reverse Linked List (`easy/reverse-linked-list.ts`)
+
+- **Approach**: Iterative pointer manipulation for O(n) time complexity
+- **Key Insight**: Uses prev/current pointers to reverse links in-place
+- **Note**: Includes commented alternative approach showing evolution from naive to optimal
+
+### Middle of the Linked List (`easy/middle-of-the-linked-list.ts`)
+
+- **Approach**: Two-pointer technique (slow and fast pointers)
+- **Time Complexity**: O(n) - fast pointer moves twice as fast as slow
+- **Key Insight**: When fast reaches end, slow is at middle
+
+### Linked List Cycle (`easy/linked-list-cycle.ts`)
+
+- **Approach**: Tortoise and Hare algorithm (Floyd's cycle detection)
+- **Time Complexity**: O(n), Space Complexity\*\*: O(1)
+- **Key Insight**: Fast pointer eventually catches slow pointer if cycle exists
+
+### Merge Two Sorted Lists (`easy/merge-two-sorted-lists.ts`)
+
+- **Approach**: Dummy node pattern with two-pointer traversal
+- **Time Complexity**: O(n+m) where n,m are lengths of input lists
+- **Key Insight**: Uses dummy head to simplify edge cases
+
+### Remove Nth Node From End of List (`medium/remove_nth_node_from_end_of_list.ts`)
+
+- **Approach**: Two-pointer technique with n-node gap
+- **Time Complexity**: O(n), Space Complexity\*\*: O(1)
+- **Key Insight**: Fast pointer advances n nodes first, then both move together
 
 ## 📊 Analysis Methodology
 
